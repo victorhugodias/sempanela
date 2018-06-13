@@ -1,4 +1,4 @@
-package com.example.victordias.sempanela;
+package com.example.victordias.sempanela.Helpers;
 
 import android.app.Activity;
 import android.content.Context;
@@ -7,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.example.victordias.sempanela.Model.Jogador;
+import com.example.victordias.sempanela.R;
 
 import java.util.ArrayList;
 

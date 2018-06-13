@@ -1,4 +1,4 @@
-package com.example.victordias.sempanela;
+package com.example.victordias.sempanela.Model;
 
 public class Jogador {
 

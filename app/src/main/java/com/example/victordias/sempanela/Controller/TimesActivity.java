@@ -1,7 +1,9 @@
-package com.example.victordias.sempanela;
+package com.example.victordias.sempanela.Controller;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.victordias.sempanela.R;
 
 public class TimesActivity extends AppCompatActivity {
 

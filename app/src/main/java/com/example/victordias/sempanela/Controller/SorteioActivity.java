@@ -1,8 +1,6 @@
-package com.example.victordias.sempanela;
+package com.example.victordias.sempanela.Controller;
 
 import android.content.Context;
-import android.content.DialogInterface;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,6 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.example.victordias.sempanela.Helpers.ListAdapter;
+import com.example.victordias.sempanela.Model.Jogador;
+import com.example.victordias.sempanela.R;
 
 import java.util.ArrayList;
 
