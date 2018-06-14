@@ -7,18 +7,17 @@ public class Time {
 
     private List<Jogador> jogadores;
     private String nome;
-    private static int contador=0;
 
-    public Time(List<Jogador> jogadores){
+
+    public Time(String nome,List<Jogador> jogadores){
+        this.setNome(nome);
         this.jogadores = jogadores;
-        contador++;
-        nome= "Time " + contador;
+
     }
 
-    public Time(){
+    public Time(String nome){
         this.jogadores = new ArrayList<Jogador>();
-        contador++;
-        nome= "Time " + contador;
+        this.setNome(nome);
     }
 
     public void setJogador(Jogador jogador){

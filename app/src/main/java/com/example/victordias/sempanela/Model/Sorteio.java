@@ -33,10 +33,11 @@ public class Sorteio {
         }
 
         for(int i = 0; i<qtTimes; i++){
-            Time time = new Time();
+            Time time = new Time("Time "+ (i+1));
             for(int z = 0; z < qtdJogadoresPorTime; z++){
                 sorteado = random.nextInt(jogadores.size());
                 time.setJogador(jogadores.get(sorteado));
+
                 jogadores.remove(jogadores.get(sorteado));
             }
             times.add(time);
@@ -45,8 +46,7 @@ public class Sorteio {
         //Se houver mais jogadores do que o tamanho dos
         //times permite será criado um time Reservas.
         if(numeroDeReservas> 0){
-            Time reservas = new Time(jogadores);
-            reservas.setNome("Time de Reservas");
+            Time reservas = new Time("Time de Reservas",jogadores);
             times.add(reservas);
         }
 
