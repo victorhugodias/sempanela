@@ -1,5 +1,6 @@
 package com.example.victordias.sempanela.Model;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
@@ -7,8 +8,16 @@ public class Sorteio {
 
     private List<Time> times;
 
+    public Sorteio() {
+        this.times = new ArrayList<Time>();
+    }
+
     //Realiza o sorteio de times levando em consideração a quantidade de times
     public List<Time> realizarSorteioQtTimes(List<Jogador> jogadores, int qtTimes){
+
+        if(jogadores.size() < qtTimes || qtTimes <= 0){
+            return null;
+        }
 
         int numeroDeReservas = 0;
         //Essa variável define a quantidade de jogadores por time
@@ -48,7 +57,7 @@ public class Sorteio {
     //Realiza o sorteio de times levando em consideração a quantidade de jogadores x time
     public List<Time> realizarSorteioQtJogadoresPorTime(List<Jogador> jogadores, int qtJDxTM){
 
-        if(qtJDxTM > jogadores.size() && qtJDxTM <= 0){
+        if(qtJDxTM > jogadores.size() || qtJDxTM <= 0){
             return null;
         }
         int qtTimes = jogadores.size() / qtJDxTM;
