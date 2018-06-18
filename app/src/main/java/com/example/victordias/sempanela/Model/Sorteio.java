@@ -6,14 +6,14 @@ import java.util.Random;
 
 public class Sorteio {
 
-    private List<Time> times;
+    private ArrayList<Time> times;
 
     public Sorteio() {
         this.times = new ArrayList<Time>();
     }
 
     //Realiza o sorteio de times levando em consideração a quantidade de times
-    public List<Time> realizarSorteioQtTimes(List<Jogador> jogadores, int qtTimes){
+    public ArrayList<Time> realizarSorteioQtTimes(List<Jogador> jogadores, int qtTimes){
 
         if(jogadores.size() < qtTimes || qtTimes <= 0){
             return null;
@@ -55,7 +55,7 @@ public class Sorteio {
     }
 
     //Realiza o sorteio de times levando em consideração a quantidade de jogadores x time
-    public List<Time> realizarSorteioQtJogadoresPorTime(List<Jogador> jogadores, int qtJDxTM){
+    public ArrayList<Time> realizarSorteioQtJogadoresPorTime(List<Jogador> jogadores, int qtJDxTM){
 
         if(qtJDxTM > jogadores.size() || qtJDxTM <= 0){
             return null;

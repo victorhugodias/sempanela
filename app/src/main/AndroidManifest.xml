@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Controller.SorteioActivity" />
-        <activity android:name=".Controller.TimesActivity"></activity>
+        <activity android:name=".Controller.TimesActivity" />
+        <activity android:name=".Controller.ResultadoActivity"></activity>
     </application>
 
 </manifest>
