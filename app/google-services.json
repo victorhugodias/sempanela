@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "635251695379",
+    "firebase_url": "https://sempanela-1348d.firebaseio.com",
+    "project_id": "sempanela-1348d",
+    "storage_bucket": "sempanela-1348d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635251695379:android:df7c55cc8426cea3",
+        "android_client_info": {
+          "package_name": "com.example.victordias.sempanela"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635251695379-glpfvj8tvqpgsvn5b66tvsj6psb5qaul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.victordias.sempanela",
+            "certificate_hash": "c1dcaeedf9a769a511c908165088e249c13d3d7f"
+          }
+        },
+        {
+          "client_id": "635251695379-r9kmtcb5tnketiu4upph7bkv924fj066.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEhZZx3kon5UvmasVwjHf_LGKCUKI6ENg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635251695379-r9kmtcb5tnketiu4upph7bkv924fj066.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
