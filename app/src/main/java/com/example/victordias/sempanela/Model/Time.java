@@ -1,9 +1,10 @@
 package com.example.victordias.sempanela.Model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Time {
+public class Time implements Serializable {
 
     private List<Jogador> jogadores;
     private String nome;

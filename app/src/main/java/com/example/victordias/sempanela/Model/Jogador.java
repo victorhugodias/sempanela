@@ -1,6 +1,8 @@
 package com.example.victordias.sempanela.Model;
 
-public class Jogador {
+import java.io.Serializable;
+
+public class Jogador implements Serializable {
 
 
     private String nome;
