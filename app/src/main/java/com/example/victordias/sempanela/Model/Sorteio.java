@@ -19,38 +19,13 @@ public class Sorteio {
             return null;
         }
 
-        int numeroDeReservas = 0;
+
         //Essa variável define a quantidade de jogadores por time
         //sempre deixando os times com o maximo de jogadores possivel
-        int qtdJogadoresPorTime = jogadores.size() / qtTimes;
+        int qtJDxTM = jogadores.size() / qtTimes;
 
-        int sorteado = 0;
-        Random random = new Random();
 
-        //laço que define o tamanho dos times e a quantidade de jogadores na reserva
-        while((jogadores.size() + numeroDeReservas) % qtTimes != 0){
-            numeroDeReservas++;
-        }
-
-        for(int i = 0; i<qtTimes; i++){
-            Time time = new Time("Time "+ (i+1));
-            for(int z = 0; z < qtdJogadoresPorTime; z++){
-                sorteado = random.nextInt(jogadores.size());
-                time.setJogador(jogadores.get(sorteado));
-
-                jogadores.remove(jogadores.get(sorteado));
-            }
-            times.add(time);
-        }
-
-        //Se houver mais jogadores do que o tamanho dos
-        //times permite será criado um time Reservas.
-        if(numeroDeReservas> 0){
-            Time reservas = new Time("Time de Reservas",jogadores);
-            times.add(reservas);
-        }
-
-        return times;
+        return RealizaSorteio(jogadores, qtJDxTM, qtTimes);
 
     }
 
@@ -62,11 +37,43 @@ public class Sorteio {
         }
         int qtTimes = jogadores.size() / qtJDxTM;
 
-        //uma vez definida a quantidade de times,
-        //podemos utilizar o método anterior
-        return realizarSorteioQtTimes(jogadores, qtTimes);
+        return RealizaSorteio(jogadores, qtJDxTM, qtTimes);
     }
 
+    private ArrayList<Time> RealizaSorteio(List<Jogador> jogadores, int qtJDxTM, int qtTimes) {
+
+        int numeroDeReservas = 0;
+
+        int sorteado = 0;
+        Random random = new Random();
+
+        //laço que define o tamanho dos times e a quantidade de jogadores na reserva
+        while ((jogadores.size() + numeroDeReservas) % qtTimes != 0) {
+            numeroDeReservas++;
+        }
+
+        for (int i = 0; i < qtTimes; i++) {
+            Time time = new Time("Time " + (i + 1));
+            for (int z = 0; z < qtJDxTM; z++) {
+                sorteado = random.nextInt(jogadores.size());
+                time.setJogador(jogadores.get(sorteado));
+
+                jogadores.remove(jogadores.get(sorteado));
+            }
+            times.add(time);
+        }
+
+        if(numeroDeReservas>0){
+            Time timeReserva = new Time("Time de Reservas");
+            for (Jogador jogador:jogadores) {
+
+                timeReserva.setJogador(jogador);
+            }
+            times.add(timeReserva);
+        }
+
+        return times;
+    }
 
 
 }
