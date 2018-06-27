@@ -2,9 +2,9 @@ package com.example.victordias.sempanela.Controller;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -22,7 +22,6 @@ import com.example.victordias.sempanela.Model.Time;
 import com.example.victordias.sempanela.R;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class SorteioActivity extends AppCompatActivity {
 
