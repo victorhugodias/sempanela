@@ -21,6 +21,7 @@ public class ResultadoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide(); // tira a barra superior azul do android
         setContentView(R.layout.activity_resultado);
 
         expLV = (ExpandableListView) findViewById(R.id.ExpListView);

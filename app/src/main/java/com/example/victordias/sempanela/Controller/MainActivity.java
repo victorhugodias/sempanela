@@ -19,9 +19,11 @@ public class MainActivity extends AppCompatActivity {
     private InterstitialAd mInterstitialAd;
     private Button btTelaSorteio;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide(); // tira a barra superior azul do android
         setContentView(R.layout.activity_main);
 
         btTelaSorteio = (Button) findViewById(R.id.btTelaSorteio);
